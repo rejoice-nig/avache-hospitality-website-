@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avache Hospitality Enterprise</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Global Styles */
+    body { margin:0; font-family:"Montserrat",sans-serif; background:#fffaf0; color:#3b3b3b; }
+    a { text-decoration:none; }
+    
+    /* Header */
+    header { background:#800020; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; position:fixed; width:100%; top:0; z-index:1000; }
+    header .logo { color:white; font-size:24px; font-weight:bold; }
+    header nav a { color:white; margin-left:15px; font-weight:500; font-size:16px; }
+
+    /* Hero Section */
+    .hero { background:#f6f1e8; padding:140px 20px 80px; text-align:center; }
+    .hero h1 { font-size:36px; color:#800020; margin-bottom:10px; }
+    .hero p { font-size:18px; color:#2e6f57; margin-bottom:20px; }
+    .btn { display:inline-block; padding:12px 32px; border-radius:6px; font-weight:bold; cursor:pointer; margin:5px 5px; }
+    .btn-primary { background:#2e6f57; color:white; border:2px solid #2e6f57; }
+    .btn-secondary { background:white; color:#800020; border:2px solid #800020; }
+
+    /* Sections */
+    section { padding:60px 20px; }
+    h2 { text-align:center; color:#800020; margin-bottom:25px; font-size:28px; }
+    p { max-width:800px; margin:auto; font-size:16px; line-height:1.6; text-align:center; }
+
+    /* Card Layout for Solutions / Products */
+    .card-container { display:flex; flex-wrap:wrap; justify-content:center; gap:15px; }
+    .card { background:white; padding:20px; border-radius:8px; box-shadow:0px 2px 12px rgba(0,0,0,0.08); width:90%; max-width:300px; text-align:center; }
+    .card h3 { color:#800020; margin-bottom:10px; }
+    .card p { font-size:14px; color:#3b3b3b; }
+
+    /* Footer */
+    footer { background:#e8dfcf; text-align:center; padding:30px 20px; font-size:14px; color:#3b3b3b; margin-top:40px; }
+
+    /* Responsive Adjustments */
+    @media(min-width:768px){ .card { width:45%; } }
+    @media(min-width:1024px){ .card { width:30%; } }
+  </style>
 </head>
 <body>
 
@@ -14,35 +52,49 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#products">Products</a>
+    <a href="#solutions">Solutions</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero" id="home">
-  <h1>Elevating Hospitality Standards</h1>
-  <p>Luxury linens & premium guest amenities for hotels and boutique spaces.</p>
-  <button class="btn btn-primary">View Products</button>
-  <button class="btn btn-secondary">Request Quote</button>
+  <h1>Supplying Premium Hospitality Essentials Across Nigeria</h1>
+  <p>Strategic procurement partner for luxury hotels, boutique hotels, and exclusive residences.</p>
+  <a href="#solutions" class="btn btn-primary">Our Solutions</a>
+  <a href="#contact" class="btn btn-secondary">Request Quote</a>
 </section>
 
 <section id="about">
   <h2>About Avache</h2>
-  <p style="max-width: 800px; margin: auto;">
-    Avache Hospitality Enterprise supplies premium quality linens, room essentials, and guest amenities to hotels and luxury properties nationwide.
-  </p>
+  <p>Avache Hospitality Enterprise supplies premium quality linens, room essentials, and guest amenities to hotels and luxury properties nationwide. We provide strategic procurement, custom branding, and reliable fulfillment for corporate and hospitality clients.</p>
 </section>
 
-<section id="products">
-  <h2>Our Products</h2>
-  <p style="text-align: center;">(Later we’ll replace this with item cards and images)</p>
+<section id="solutions">
+  <h2>Our Solutions</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Linen & Bedding</h3>
+      <p>Premium towels, duvet systems, bedding sets, and mattress protection for luxury hotels and boutique residences.</p>
+    </div>
+    <div class="card">
+      <h3>Guest Amenities</h3>
+      <p>Shower gel, lotion, diffusers, candles, vanity kits, and disposable slippers tailored for an exceptional guest experience.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Branding</h3>
+      <p>Bulk contracts, custom embroidery, and branded packaging solutions designed to elevate your hotel's image.</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p style="text-align: center;">Email | Phone | WhatsApp</p>
+  <p>Email: <a href="mailto:avachehospitality@gmail.com">avachehospitality@gmail.com</a> | WhatsApp: <a href="https://wa.me/08107653319">08107653319</a> | Phone: 08107653319</p>
 </section>
+
+<footer>
+  &copy; 2026 Avache Hospitality Enterprise. All rights reserved.
+</footer>
 
 </body>
 </html>
-Update website design
